@@ -1,0 +1,8 @@
+on early-fs
+    exec_start vendor-mmi-cxp-sh
+
+service vendor-mmi-cxp-sh /vendor/bin/vendor.mmi.cxp.sh
+    user root
+    oneshot
+    disabled
+

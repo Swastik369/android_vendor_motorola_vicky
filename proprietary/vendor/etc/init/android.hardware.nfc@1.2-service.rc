@@ -1,0 +1,18 @@
+# Motorola, vinimbp, change nfc hal, IKSWT-194567
+on boot && property:ro.vendor.hw.nfc=true && property:ro.build.version.release=13
+    start vendor.nfc_hal_service
+
+on boot && property:ro.vendor.hw.nfc=nxp && property:ro.build.version.release=13
+    start vendor.nfc_hal_service
+
+on boot && property:ro.vendor.hw.nfc=ese_nxp && property:ro.build.version.release=13
+    start vendor.nfc_hal_service
+
+service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
+    class hal
+    user nfc
+    group nfc
+    disabled
+    # Motorola, wangjiao, 06/02/2021, IKSWR-85914, add shutdown critical
+    shutdown critical
+

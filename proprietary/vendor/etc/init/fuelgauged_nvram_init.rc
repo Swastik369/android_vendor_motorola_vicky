@@ -1,0 +1,9 @@
+service fuelgauged_nvram /vendor/bin/fuelgauged_nvram
+    class main
+    user system
+    group system
+    oneshot
+    disabled
+
+on boot && property:ro.vendor.hw.fuelgauge=int_fg
+    start fuelgauged_nvram

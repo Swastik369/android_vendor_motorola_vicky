@@ -1,0 +1,11 @@
+service fuelgauged /vendor/bin/fuelgauged
+    class core
+    user system
+    group system
+    disabled
+
+on early-fs
+    setprop ro.vendor.hw.fuelgauge int_fg
+
+on boot && property:ro.vendor.hw.fuelgauge=int_fg
+    start fuelgauged

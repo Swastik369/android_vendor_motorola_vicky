@@ -1,0 +1,12 @@
+service trustonic-alps-daemon_proxy /vendor/bin/rsudaemon_proxy
+    class core
+    user system
+    group system
+
+on property:sys.boot_completed=1 && property:ro.carrier=cricket
+    mkdir /data/vendor/mcRegistry 0775 system system
+    symlink  /vendor/app/mcRegistry/cricket_6716af0c135559728ae9e9754da47ccd.tabin /data/vendor/mcRegistry/6716af0c135559728ae9e9754da47ccd.tabin
+
+on property:sys.boot_completed=1 && property:ro.carrier=attpre
+    mkdir /data/vendor/mcRegistry 0775 system system
+    symlink  /vendor/app/mcRegistry/attpre_6716af0c135559728ae9e9754da47ccd.tabin /data/vendor/mcRegistry/6716af0c135559728ae9e9754da47ccd.tabin

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<runin_config>
+    <item name="battery_lower_limit" enable="true" data="20" />
+    <item name="battery_upper_limit" enable="true" data="30" />
+    <item name="camera_0" enable="true" />
+    <item name="camera_1" enable="true" />
+    <item name="camera_2" enable="true" />
+    <item name="camera_3" enable="true" />
+    <item name="camera_4" enable="false" />
+    <item name="camera_5" enable="false" />
+    <item name="camera_6" enable="false" />
+    <item name="camera_7" enable="false" />
+    <item name="camera_0_flash" enable="true" />
+    <item name="camera_1_flash" enable="false" />
+    <item name="camera_2_flash" enable="false" />
+    <item name="camera_3_flash" enable="false" />
+    <item name="camera_4_flash" enable="false" />
+    <item name="camera_5_flash" enable="false" />
+    <item name="camera_6_flash" enable="false" />
+    <item name="camera_7_flash" enable="false" />
+    <item name="fps_selftest" enable="true" data="EGISFOD" />
+    <item name="fps_chekerboard" enable="false" />
+    <item name="fps_r_selftest" enable="false" />
+    <item name="fps_r_chekerboard" enable="false" />
+    <item name="tp_selftest" enable="false" />
+    <item name="mic_2" enable="true"/>
+    <item name="mic_3" enable="false"/>
+    <item name="mic_4" enable="false"/>
+    <item name="mic_5" enable="false"/>
+    <item name="sensor_accelerometer" enable="true" />
+    <item name="sensor_gravity" enable="true" />
+    <item name="sensor_gyroscope" enable="true" />
+    <item name="sensor_light" enable="true" />
+    <item name="sensor_magnetic" enable="false" />
+    <item name="sensor_proximity" enable="true" />
+</runin_config>
